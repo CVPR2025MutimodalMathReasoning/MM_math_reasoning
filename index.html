@@ -12,13 +12,28 @@
       font-family: 'Lato', sans-serif;
     }
     .intro-header {
-      background-image: url('https://cdn.vectorstock.com/i/preview-1x/30/80/mathematics-symbols-and-formulas-background-vector-46698030.jpg');
+      background-image: url('img/intro/bg.png');
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
       color: white;
       padding: 100px 0;
       text-align: center;
+      position: relative;
+    }
+    .intro-header::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      z-index: 1;
+    }
+    .intro-header .container {
+      position: relative;
+      z-index: 2;
     }
     .intro-header h1, .intro-header h3 {
       text-shadow: 0 0 10px black;
@@ -121,6 +136,7 @@
 
 
 
+
 <!-- Program -->
 <div id="program" class="content-section-a">
   <div class="container">
@@ -152,24 +168,24 @@
     <h3 class="section-heading text-center">Organizers & Speakers</h3>
     <div class="row text-center">
       <div class="col-sm-2 speaker-card">
-        <img src="img/organizer/Tianyu.png" class="img-responsive img-circle" alt="Tianyu">
-        <p><a href="https://tianyu-yang1998.github.io/">Tianyu Yang</a><br><i>Notre Dame</i></p>
+        <img src="img/organizer/minhao.png" class="img-responsive img-circle" alt="Minhao">
+        <p><a href="https://cmhcbb.github.io/">Minhao Cheng</a><br><i>Penn State</i></p>
       </div>
       <div class="col-sm-2 speaker-card">
-        <img src="img/organizer/panlu.jpg" class="img-responsive img-circle" alt="Pan Lu">
-        <p><a href="https://www.cs.stanford.edu/~panlu/">Pan Lu</a><br><i>Stanford</i></p>
+        <img src="img/organizer/panlu.png" class="img-responsive img-circle" alt="Pan Lu">
+        <p><a href="https://github.com/lupantech">Pan Lu</a><br><i>Stanford</i></p>
       </div>
       <div class="col-sm-2 speaker-card">
-        <img src="img/organizer/yilun.jpg" class="img-responsive img-circle" alt="Yilun">
+        <img src="img/organizer/weijia.png" class="img-responsive img-circle" alt="Weijia">
+        <p><a href="https://weijiashi.notion.site/">Weijia Shi</a><br><i>UW</i></p>
+      </div>
+      <div class="col-sm-2 speaker-card">
+        <img src="img/organizer/yilun.png" class="img-responsive img-circle" alt="Yilun">
         <p><a href="https://yilunzhao.github.io/">Yilun Zhao</a><br><i>Yale</i></p>
       </div>
       <div class="col-sm-2 speaker-card">
-        <img src="img/organizer/minhao.jpg" class="img-responsive img-circle" alt="Minhao">
-        <p><a href="https://minhao.dev/">Minhao Cheng</a><br><i>Penn State</i></p>
-      </div>
-      <div class="col-sm-2 speaker-card">
-        <img src="img/organizer/weijia.jpg" class="img-responsive img-circle" alt="Weijia">
-        <p><a href="https://weijiashi.github.io/">Weijia Shi</a><br><i>UW</i></p>
+        img src="img/organizer/Tianyu.png" class="img-responsive img-circle" alt="Tianyu">
+        <p><a href="https://tianyu-yang1998.github.io/">Tianyu Yang</a><br><i>Notre Dame</i></p>
       </div>
     </div>
   </div>
