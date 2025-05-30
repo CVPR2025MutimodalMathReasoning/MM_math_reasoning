@@ -19,13 +19,12 @@
       height: 100vh;
       position: relative;
       color: white;
-
       text-align: center;
-
     }
     .intro-header::before {
       content: "";
-@@ -28,14 +28,22 @@
+      position: absolute;
+      top: 0;
       left: 0;
       width: 100%;
       height: 100%;
@@ -33,56 +32,80 @@
       z-index: 1;
     }
     .intro-header .container {
-      position: absolute;
+      position: relative;
       top: 60%;
-      left: 50%;
-      transform: translate(-50%, -50%);
+      transform: translateY(-50%);
       z-index: 2;
     }
     .intro-header h1 {
-      font-size: 3em;
-      text-shadow: 0 0 10px black;
+      font-size: 3.5em;
+      text-shadow: 0 0 12px black;
     }
     .intro-header h3 {
-      font-size: 1.5em;
+      font-size: 1.8em;
       text-shadow: 0 0 10px black;
     }
     .content-section-a {
-@@ -49,162 +57,166 @@
+      padding: 60px 0;
+    }
+    .section-heading {
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+    .table-bordered > thead > tr {
+      background-color: #f0f4ff;
+    }
+    .table-bordered > tbody > tr:nth-child(odd) {
+      background-color: #fcfcfc;
+    }
+    .table-bordered > tbody > tr:nth-child(even) {
+      background-color: #f8f9fb;
+    }
+    .table-bordered th {
+      background-color: #dce6f8;
+      color: #1e3a8a;
+      text-align: center;
+    }
+    .table td, .table th {
       vertical-align: middle !important;
+      text-align: center;
     }
     footer {
-      background: #f2f2f2;
+      background: #eeeeee;
       color: #333;
       padding: 20px 0;
       text-align: center;
     }
     nav.navbar {
       margin-bottom: 0;
-      background-color: #f2f2f2;
+      background-color: #eeeeee;
       border-radius: 0;
-      border: none;
     }
     nav.navbar a, .navbar-brand {
-      color: #333 !important;
+      color: #1e3a8a !important;
     }
     .navbar-nav>li>a:hover {
-      background-color: #ddd !important;
+      background-color: #cccccc !important;
     }
     @media (max-width: 768px) {
       .intro-header {
-        padding: 50px 0;
+        padding: 100px 0 50px;
       }
       .section-heading {
         font-size: 1.5em;
       }
     }
     .img-circle {
-      border-radius: 50%;
+      width: 120px;
+      height: 120px;
       object-fit: cover;
-      width: 140px;
-      height: 140px;
-      margin-bottom: 10px;
+      border-radius: 50%;
+      margin: auto auto 10px auto;
+      display: block;
+    }
+    .speaker-card {
+      text-align: center;
+      margin-bottom: 30px;
     }
     .speaker-card p {
       margin: 0;
@@ -124,6 +147,21 @@
     <h3 class="wow fadeIn" data-wow-delay="0.3s">CVPR 2025 | June 12 | 2:00 PM – 5:00 PM CDT | Nashville, TN</h3>
   </div>
 </div>
+
+<!-- Overview -->
+<div id="scope" class="content-section-a">
+  <div class="container">
+    <h3 class="section-heading text-center">Overview</h3>
+    <p class="lead text-justify">
+      Mathematical reasoning has long been a cornerstone of scientific discovery and education. Yet, extending modern AI systems to perform robust and interpretable reasoning across <strong>multimodal inputs</strong>—images, language, and symbolic expressions—remains a significant challenge.
+      <br><br>
+      This tutorial presents the <strong>frontiers of multimodal mathematical reasoning</strong>, a rapidly emerging area at the intersection of computer vision, natural language processing, and symbolic AI. Recent advances in vision-language models have shown promise in tasks like diagram understanding, math problem-solving, and visual question answering. However, integrating these modalities for <em>precise, multi-step mathematical reasoning</em> requires new model architectures, training strategies, and evaluation methods.
+      <br><br>
+      Join us as we chart a path toward building <strong>general-purpose, explainable, and high-precision reasoning systems</strong> that combine the best of visual, linguistic, and symbolic intelligence!
+    </p>
+  </div>
+</div>
+
 
 <!-- Scope -->
 <div id="scope" class="content-section-a">
