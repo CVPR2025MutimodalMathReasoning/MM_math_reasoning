@@ -14,17 +14,19 @@
     .intro-header {
       background-image: url('img/intro/bg.png');
       background-size: cover;
+
       background-position: center;
       background-repeat: no-repeat;
       height: 100vh;
       position: relative;
       color: white;
+
       text-align: center;
+
     }
     .intro-header::before {
       content: "";
-      position: absolute;
-      top: 0;
+@@ -28,14 +28,22 @@
       left: 0;
       width: 100%;
       height: 100%;
@@ -32,80 +34,56 @@
       z-index: 1;
     }
     .intro-header .container {
-      position: relative;
+      position: absolute;
       top: 60%;
-      transform: translateY(-50%);
+      left: 50%;
+      transform: translate(-50%, -50%);
       z-index: 2;
     }
     .intro-header h1 {
-      font-size: 3.5em;
-      text-shadow: 0 0 12px black;
+      font-size: 3em;
+      text-shadow: 0 0 10px black;
     }
     .intro-header h3 {
-      font-size: 1.8em;
+      font-size: 1.5em;
       text-shadow: 0 0 10px black;
     }
     .content-section-a {
-      padding: 60px 0;
-    }
-    .section-heading {
-      font-weight: bold;
-      margin-bottom: 20px;
-    }
-    .table-bordered > thead > tr {
-      background-color: #f0f4ff;
-    }
-    .table-bordered > tbody > tr:nth-child(odd) {
-      background-color: #fcfcfc;
-    }
-    .table-bordered > tbody > tr:nth-child(even) {
-      background-color: #f8f9fb;
-    }
-    .table-bordered th {
-      background-color: #dce6f8;
-      color: #1e3a8a;
-      text-align: center;
-    }
-    .table td, .table th {
+@@ -49,162 +57,166 @@
       vertical-align: middle !important;
-      text-align: center;
     }
     footer {
-      background: #eeeeee;
+      background: #f2f2f2;
       color: #333;
       padding: 20px 0;
       text-align: center;
     }
     nav.navbar {
       margin-bottom: 0;
-      background-color: #eeeeee;
+      background-color: #f2f2f2;
       border-radius: 0;
+      border: none;
     }
     nav.navbar a, .navbar-brand {
-      color: #1e3a8a !important;
+      color: #333 !important;
     }
     .navbar-nav>li>a:hover {
-      background-color: #cccccc !important;
+      background-color: #ddd !important;
     }
     @media (max-width: 768px) {
       .intro-header {
-        padding: 100px 0 50px;
+        padding: 50px 0;
       }
       .section-heading {
         font-size: 1.5em;
       }
     }
     .img-circle {
-      width: 120px;
-      height: 120px;
-      object-fit: cover;
       border-radius: 50%;
-      margin: auto auto 10px auto;
-      display: block;
-    }
-    .speaker-card {
-      text-align: center;
-      margin-bottom: 30px;
+      object-fit: cover;
+      width: 140px;
+      height: 140px;
+      margin-bottom: 10px;
     }
     .speaker-card p {
       margin: 0;
@@ -148,6 +126,7 @@
   </div>
 </div>
 
+
 <!-- Overview -->
 <div id="scope" class="content-section-a">
   <div class="container">
@@ -161,7 +140,6 @@
     </p>
   </div>
 </div>
-
 
 <!-- Scope -->
 <div id="scope" class="content-section-a">
