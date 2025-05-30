@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CVPR 2025 Tutorial: Multimodal Mathematical Reasoning</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Lato', sans-serif;
+    }
+    .intro-header {
+      background-image: url('https://cdn.vectorstock.com/i/preview-1x/30/80/mathematics-symbols-and-formulas-background-vector-46698030.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      color: white;
+      padding: 100px 0;
+      text-align: center;
+    }
+    .intro-header h1, .intro-header h3 {
+      text-shadow: 0 0 10px black;
+    }
+    .content-section-a {
+      padding: 60px 0;
+    }
+    .section-heading {
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+    .table td, .table th {
+      vertical-align: middle !important;
+    }
+    footer {
+      background: #1e1e1e;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+    }
+    nav.navbar {
+      margin-bottom: 0;
+      background-color: #1e3a8a;
+      border-radius: 0;
+    }
+    nav.navbar a, .navbar-brand {
+      color: white !important;
+    }
+    .navbar-nav>li>a:hover {
+      background-color: #12295b !important;
+    }
+    @media (max-width: 768px) {
+      .intro-header {
+        padding: 50px 0;
+      }
+      .section-heading {
+        font-size: 1.5em;
+      }
+    }
+    .img-circle {
+      border-radius: 50%;
+      margin-bottom: 10px;
+    }
+    .speaker-card p {
+      margin: 0;
+    }
+    .speaker-card a {
+      color: #1e3a8a;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+<!-- NavBar -->
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#home">CVPR 2025 Tutorial</a>
+    </div>
+    <div class="collapse navbar-collapse" id="main-navbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#scope">Overview</a></li>
+        <li><a href="#program">Program</a></li>
+        <li><a href="#organizers">Speakers</a></li>
+        <li><a href="#contacts">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Header -->
+<div id="home" class="intro-header">
+  <div class="container">
+    <h1 class="wow fadeIn">Multimodal Mathematical Reasoning</h1>
+    <h3 class="wow fadeIn" data-wow-delay="0.3s">CVPR 2025 | June 12 | 2:00 PM – 5:00 PM CDT | Nashville, TN</h3>
+  </div>
+</div>
+
+<!-- Scope -->
+<div id="scope" class="content-section-a">
+  <div class="container">
+    <h3 class="section-heading text-center">Overview</h3>
+    <p class="lead text-justify">
+      Mathematical reasoning has long been a cornerstone of scientific discovery and education. Yet, extending modern AI systems to perform robust and interpretable reasoning across <strong>multimodal inputs</strong>—images, language, and symbolic expressions—remains a significant challenge.
+      <br><br>
+      This tutorial presents the <strong>frontiers of multimodal mathematical reasoning</strong>, a rapidly emerging area at the intersection of computer vision, natural language processing, and symbolic AI. Recent advances in vision-language models have shown promise in tasks like diagram understanding, math problem-solving, and visual question answering. However, integrating these modalities for <em>precise, multi-step mathematical reasoning</em> requires new model architectures, training strategies, and evaluation methods.
+      <br><br>
+      Join us as we chart a path toward building <strong>general-purpose, explainable, and high-precision reasoning systems</strong> that combine the best of visual, linguistic, and symbolic intelligence!
+    </p>
+  </div>
+</div>
+
+<!-- (rest of content remains unchanged) -->
+
+
+
+<!-- Program -->
+<div id="program" class="content-section-a">
+  <div class="container">
+    <h3 class="section-heading text-center">Program (PDT / CDT)</h3>
+    <table class="table table-bordered">
+      <thead>
+        <tr class="info">
+          <th>Time (PDT / CDT)</th>
+          <th>Speaker</th>
+          <th>Topic</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>12:00 – 12:20 / 2:00 – 2:20</td><td>Tianyu Yang</td><td>Motivation & Challenges of Multimodal Math Reasoning</td></tr>
+        <tr><td>12:20 – 1:00 / 2:20 – 3:00</td><td>Pan Lu</td><td>Benchmarking Multimodal Math Reasoning</td></tr>
+        <tr><td>1:00 – 1:10 / 3:00 – 3:10</td><td>Tianyu Yang</td><td>Symbolic Reasoning in Multimodal Systems</td></tr>
+        <tr><td>1:10 – 1:50 / 3:10 – 3:50</td><td>Yilun Zhao</td><td>Pretraining & Fine-tuning for Math Reasoning Models</td></tr>
+        <tr><td>1:50 – 2:20 / 3:50 – 4:20</td><td>Minhao Cheng</td><td>Reinforcement Learning & GRPO</td></tr>
+        <tr><td>2:20 – 2:50 / 4:20 – 4:50</td><td>Weijia Shi</td><td>Inference-Time Scaling & Tool-Augmented Reasoning</td></tr>
+        <tr><td>2:50 – 3:00 / 4:50 – 5:00</td><td>—</td><td>Q&A + Discussion</td></tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<!-- Organizers -->
+<div id="organizers" class="content-section-a">
+  <div class="container">
+    <h3 class="section-heading text-center">Organizers & Speakers</h3>
+    <div class="row text-center">
+      <div class="col-sm-2 speaker-card">
+        <img src="img/organizer/Tianyu.png" class="img-responsive img-circle" alt="Tianyu">
+        <p><a href="https://tianyu-yang1998.github.io/">Tianyu Yang</a><br><i>Notre Dame</i></p>
+      </div>
+      <div class="col-sm-2 speaker-card">
+        <img src="img/organizer/panlu.jpg" class="img-responsive img-circle" alt="Pan Lu">
+        <p><a href="https://www.cs.stanford.edu/~panlu/">Pan Lu</a><br><i>Stanford</i></p>
+      </div>
+      <div class="col-sm-2 speaker-card">
+        <img src="img/organizer/yilun.jpg" class="img-responsive img-circle" alt="Yilun">
+        <p><a href="https://yilunzhao.github.io/">Yilun Zhao</a><br><i>Yale</i></p>
+      </div>
+      <div class="col-sm-2 speaker-card">
+        <img src="img/organizer/minhao.jpg" class="img-responsive img-circle" alt="Minhao">
+        <p><a href="https://minhao.dev/">Minhao Cheng</a><br><i>Penn State</i></p>
+      </div>
+      <div class="col-sm-2 speaker-card">
+        <img src="img/organizer/weijia.jpg" class="img-responsive img-circle" alt="Weijia">
+        <p><a href="https://weijiashi.github.io/">Weijia Shi</a><br><i>UW</i></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Contact -->
+<div id="contacts" class="content-section-c" style="background-color:#333; color:white; padding:40px 0;">
+  <div class="container text-center">
+    <h3>Contact</h3>
+    <p class="lead">For questions, contact the organizers at <strong>vlp-tutorial@googlegroups.com</strong></p>
+  </div>
+</div>
+
+<footer>
+  <div class="container">
+    <p>&copy; CVPR 2025 Tutorial – Multimodal Math Reasoning</p>
+  </div>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/js/bootstrap.min.js"></script>
+<script src="https://unpkg.com/wowjs@1.1.3/dist/wow.min.js"></script>
+<script>
+  new WOW().init();
+</script>
+</body>
+</html>
