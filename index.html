@@ -16,15 +16,16 @@
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
-      color: white;
-      padding: 180px 0 80px;
-      text-align: center;
+      height: 100vh;
       position: relative;
+      color: white;
+
+      text-align: center;
+
     }
     .intro-header::before {
       content: "";
-      position: absolute;
-      top: 0;
+@@ -28,14 +28,22 @@
       left: 0;
       width: 100%;
       height: 100%;
@@ -32,71 +33,55 @@
       z-index: 1;
     }
     .intro-header .container {
-      position: relative;
+      position: absolute;
+      top: 60%;
+      left: 50%;
+      transform: translate(-50%, -50%);
       z-index: 2;
     }
     .intro-header h1 {
-      text-shadow: 0 0 12px black;
       font-size: 3em;
+      text-shadow: 0 0 10px black;
     }
     .intro-header h3 {
+      font-size: 1.5em;
       text-shadow: 0 0 10px black;
-      font-size: 1.6em;
     }
     .content-section-a {
-      padding: 60px 0;
-    }
-    .section-heading {
-      font-weight: bold;
-      margin-bottom: 20px;
-    }
-    .table-bordered > thead > tr {
-      background-color: #f0f4ff;
-    }
-    .table-bordered > tbody > tr:nth-child(odd) {
-      background-color: #fcfcfc;
-    }
-    .table-bordered > tbody > tr:nth-child(even) {
-      background-color: #f8f9fb;
-    }
-    .table-bordered th {
-      background-color: #dce6f8;
-      color: #1e3a8a;
-      text-align: center;
-    }
-    .table td, .table th {
+@@ -49,162 +57,166 @@
       vertical-align: middle !important;
     }
     footer {
-      background: #eeeeee;
+      background: #f2f2f2;
       color: #333;
       padding: 20px 0;
       text-align: center;
     }
     nav.navbar {
       margin-bottom: 0;
-      background-color: #eeeeee;
+      background-color: #f2f2f2;
       border-radius: 0;
+      border: none;
     }
     nav.navbar a, .navbar-brand {
-      color: #1e3a8a !important;
+      color: #333 !important;
     }
     .navbar-nav>li>a:hover {
-      background-color: #cccccc !important;
+      background-color: #ddd !important;
     }
     @media (max-width: 768px) {
       .intro-header {
-        padding: 100px 0 50px;
+        padding: 50px 0;
       }
       .section-heading {
         font-size: 1.5em;
       }
     }
     .img-circle {
-      width: 100px;
-      height: 100px;
-      object-fit: cover;
       border-radius: 50%;
+      object-fit: cover;
+      width: 140px;
+      height: 140px;
       margin-bottom: 10px;
     }
     .speaker-card p {
@@ -140,7 +125,21 @@
   </div>
 </div>
 
-<!-- Program Update -->
+<!-- Scope -->
+<div id="scope" class="content-section-a">
+  <div class="container">
+    <h3 class="section-heading text-center">Overview</h3>
+    <p class="lead text-justify">
+      Mathematical reasoning has long been a cornerstone of scientific discovery and education. Yet, extending modern AI systems to perform robust and interpretable reasoning across <strong>multimodal inputs</strong>—images, language, and symbolic expressions—remains a significant challenge.
+      <br><br>
+      This tutorial presents the <strong>frontiers of multimodal mathematical reasoning</strong>, a rapidly emerging area at the intersection of computer vision, natural language processing, and symbolic AI. Recent advances in vision-language models have shown promise in tasks like diagram understanding, math problem-solving, and visual question answering. However, integrating these modalities for <em>precise, multi-step mathematical reasoning</em> requires new model architectures, training strategies, and evaluation methods.
+      <br><br>
+      Join us as we chart a path toward building <strong>general-purpose, explainable, and high-precision reasoning systems</strong> that combine the best of visual, linguistic, and symbolic intelligence!
+    </p>
+  </div>
+</div>
+
+<!-- Program -->
 <div id="program" class="content-section-a">
   <div class="container">
     <h3 class="section-heading text-center">Program (PDT / CDT)</h3>
@@ -155,10 +154,11 @@
       <tbody>
         <tr><td>12:00 – 12:20 / 2:00 – 2:20</td><td>Tianyu Yang</td><td>Motivation & Challenges of Multimodal Math Reasoning</td></tr>
         <tr><td>12:20 – 1:00 / 2:20 – 3:00</td><td>Pan Lu</td><td>Benchmarking Multimodal Math Reasoning</td></tr>
-        <tr><td>1:00 – 1:20 / 3:00 – 3:20</td><td>Tianyu Yang</td><td>Symbolic Reasoning in Multimodal Systems</td></tr>
-        <tr><td>1:20 – 2:00 / 3:20 – 4:00</td><td>Yilun Zhao</td><td>Pretraining & Fine-tuning for Math Reasoning Models</td></tr>
-        <tr><td>2:00 – 2:30 / 4:00 – 4:30</td><td>Minhao Cheng</td><td>Reinforcement Learning & GRPO</td></tr>
-        <tr><td>2:30 – 3:00 / 4:30 – 5:00</td><td>Weijia Shi</td><td>Inference-Time Scaling & Tool-Augmented Reasoning</td></tr>
+        <tr><td>1:00 – 1:10 / 3:00 – 3:10</td><td>Tianyu Yang</td><td>Symbolic Reasoning in Multimodal Systems</td></tr>
+        <tr><td>1:10 – 1:50 / 3:10 – 3:50</td><td>Yilun Zhao</td><td>Pretraining & Fine-tuning for Math Reasoning Models</td></tr>
+        <tr><td>1:50 – 2:20 / 3:50 – 4:20</td><td>Minhao Cheng</td><td>Reinforcement Learning & GRPO</td></tr>
+        <tr><td>2:20 – 2:50 / 4:20 – 4:50</td><td>Weijia Shi</td><td>Inference-Time Scaling & Tool-Augmented Reasoning</td></tr>
+        <tr><td>2:50 – 3:00 / 4:50 – 5:00</td><td>—</td><td>Q&A + Discussion</td></tr>
       </tbody>
     </table>
   </div>
@@ -182,7 +182,7 @@
         <p><a href="https://weijiashi.notion.site/">Weijia Shi</a><br><i>UW</i></p>
       </div>
       <div class="col-sm-2 speaker-card">
-        <img src="img/organizer/Yilun.png" class="img-responsive img-circle" alt="Yilun">
+        <img src="img/organizer/yilun.png" class="img-responsive img-circle" alt="Yilun">
         <p><a href="https://yilunzhao.github.io/">Yilun Zhao</a><br><i>Yale</i></p>
       </div>
       <div class="col-sm-2 speaker-card">
@@ -197,7 +197,7 @@
 <div id="contacts" class="content-section-c" style="background-color:#333; color:white; padding:40px 0;">
   <div class="container text-center">
     <h3>Contact</h3>
-    <p class="lead">For questions, contact the organizers at <strong>mmmathreasoning@gmail.com</strong></p>
+    <p class="lead">For questions, contact the organizers at <strong>vlp-tutorial@googlegroups.com</strong></p>
   </div>
 </div>
 
