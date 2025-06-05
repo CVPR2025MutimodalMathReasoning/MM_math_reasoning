@@ -105,20 +105,21 @@
     }
     .img-circle {
       width: 100%;
-      max-width: 180px; /* 控制最大尺寸，防止超出 */
+      max-width: 180px;
       aspect-ratio: 1/1;
       height: auto;
       object-fit: cover;
       border-radius: 50%;
-      margin: 0 auto 10px;
       display: block;
+      margin: 0 auto 10px;
       box-sizing: border-box;
     }
 
     .speaker-card {
       text-align: center;
-      margin-bottom: 60px;
+      margin-bottom: 40px;
     }
+
     .speaker-card p {
       margin: 0;
     }
@@ -210,43 +211,50 @@
 
 
 <!-- Organizers -->
-<!-- 第一行：4 位讲者 -->
-<div class="row text-center">
-  <div class="col-sm-3 speaker-card">
-    <img src="img/organizer/xiangliang.png" class="img-responsive img-circle" alt="Xiangliang Zhang">
-    <p><a href="https://engineering.nd.edu/faculty/xiangliang-zhang/">Xiangliang Zhang</a><br><i>Notre Dame</i></p>
-  </div>
-  <div class="col-sm-3 speaker-card">
-    <img src="img/organizer/armon.png" class="img-responsive img-circle" alt="Arman Cohan">
-    <p><a href="https://armancohan.com/">Arman Cohan</a><br><i>Yale</i></p>
-  </div>
-  <div class="col-sm-3 speaker-card">
-    <img src="img/organizer/minhao.png" class="img-responsive img-circle" alt="Minhao">
-    <p><a href="https://cmhcbb.github.io/">Minhao Cheng</a><br><i>Penn State</i></p>
-  </div>
-  <div class="col-sm-3 speaker-card">
-    <img src="img/organizer/panlu.png" class="img-responsive img-circle" alt="Pan Lu">
-    <p><a href="https://lupantech.github.io/">Pan Lu</a><br><i>Stanford</i></p>
+<div id="organizers" class="content-section-a">
+  <div class="container">
+    <h3 class="section-heading text-center">Organizers & Speakers</h3>
+    <div class="row" style="display: flex; flex-wrap: wrap; justify-content: center; gap: 30px;">
+
+      <div class="speaker-card" style="flex: 0 1 220px;">
+        <img src="img/organizer/xiangliang.png" class="img-circle" alt="Xiangliang Zhang">
+        <p><a href="https://engineering.nd.edu/faculty/xiangliang-zhang/">Xiangliang Zhang</a><br><i>Notre Dame</i></p>
+      </div>
+
+      <div class="speaker-card" style="flex: 0 1 220px;">
+        <img src="img/organizer/armon.png" class="img-circle" alt="Arman Cohan">
+        <p><a href="https://armancohan.com/">Arman Cohan</a><br><i>Yale</i></p>
+      </div>
+
+      <div class="speaker-card" style="flex: 0 1 220px;">
+        <img src="img/organizer/minhao.png" class="img-circle" alt="Minhao Cheng">
+        <p><a href="https://cmhcbb.github.io/">Minhao Cheng</a><br><i>Penn State</i></p>
+      </div>
+
+      <div class="speaker-card" style="flex: 0 1 220px;">
+        <img src="img/organizer/panlu.png" class="img-circle" alt="Pan Lu">
+        <p><a href="https://lupantech.github.io/">Pan Lu</a><br><i>Stanford</i></p>
+      </div>
+
+      <div class="speaker-card" style="flex: 0 1 220px;">
+        <img src="img/organizer/weijia.png" class="img-circle" alt="Weijia">
+        <p><a href="https://weijiashi.notion.site/">Weijia Shi</a><br><i>UW</i></p>
+      </div>
+
+      <div class="speaker-card" style="flex: 0 1 220px;">
+        <img src="img/organizer/Yilun.png" class="img-circle" alt="Yilun">
+        <p><a href="https://yilunzhao.github.io/">Yilun Zhao</a><br><i>Yale</i></p>
+      </div>
+
+      <div class="speaker-card" style="flex: 0 1 220px;">
+        <img src="img/organizer/Tianyu.png" class="img-circle" alt="Tianyu">
+        <p><a href="https://tianyu-yang-anna.github.io/">Tianyu Yang</a><br><i>Notre Dame</i></p>
+      </div>
+
+    </div>
   </div>
 </div>
 
-<!-- 第二行：3 位讲者，使用 offset 实现居中 -->
-<div class="row text-center">
-  <div class="col-sm-1"></div>
-  <div class="col-sm-3 speaker-card">
-    <img src="img/organizer/weijia.png" class="img-responsive img-circle" alt="Weijia">
-    <p><a href="https://weijiashi.notion.site/">Weijia Shi</a><br><i>UW</i></p>
-  </div>
-  <div class="col-sm-3 speaker-card">
-    <img src="img/organizer/Yilun.png" class="img-responsive img-circle" alt="Yilun">
-    <p><a href="https://yilunzhao.github.io/">Yilun Zhao</a><br><i>Yale</i></p>
-  </div>
-  <div class="col-sm-3 speaker-card">
-    <img src="img/organizer/Tianyu.png" class="img-responsive img-circle" alt="Tianyu">
-    <p><a href="https://tianyu-yang-anna.github.io/">Tianyu Yang</a><br><i>Notre Dame</i></p>
-  </div>
-  <div class="col-sm-1"></div>
-</div>
 
 
 <!-- Contact -->
